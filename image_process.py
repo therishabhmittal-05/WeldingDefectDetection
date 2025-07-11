@@ -185,6 +185,7 @@ class ImageProcessor:
     
     @staticmethod   
     def invert_colors(img):
+            
         return 255 - img
     
     @staticmethod
@@ -237,7 +238,7 @@ class ImageProcessor:
 
 def main():
     
-    print("Entered main function") #####
+    # print("Entered main function") #####
 
     st.title("X-Ray Welding Defect Augmentation")
     st.markdown("---")
@@ -248,7 +249,7 @@ def main():
     # detector = Inference(model)
 
 
-    print("Model loaded") #####
+    # print("Model loaded") #####
 
 
     # File uploader
@@ -257,10 +258,10 @@ def main():
         type=['png', 'jpg', 'jpeg'],
         help="Upload an X-ray image for defect detection and augmentation analysis"
     )
-    print("File loader")
+    # print("File loader")
     if uploaded_file is not None:
 
-        print("File Uploaded") #####
+        # print("File Uploaded") #####
 
         # Load original image
         original_image = Image.open(uploaded_file)
